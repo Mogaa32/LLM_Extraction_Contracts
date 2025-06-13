@@ -3,7 +3,7 @@
 This project extracts structured data from carrier contract PDFs using OCR and the Gemini API. The flow includes reading PDF files, extracting tables and text, processing them with LLM prompts, and organizing the results in a nested data structure.
 
 ## 🧱 Project Structure
-
+```
 LLM_Extraction/
 ├── main.py              # Main pipeline entry point
 ├── setup.py             # Loads environment variables & config (PDF path, API keys)
@@ -15,7 +15,7 @@ LLM_Extraction/
 ├── .gitignore           # Ignore .env, __pycache__, etc.
 ├── requirements.txt     # Lists all Python dependencies
 └── README.md            # Project overview and usage guide
-
+```
 
 ## 🚀 How to Run
 
