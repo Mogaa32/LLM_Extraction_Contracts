@@ -12,9 +12,10 @@ LLM_Extraction/
 ├── data_structure.py    # Adds entries to the nested location structure
 ├── try_fix.py           # Utility to clean and fix malformed JSON responses
 ├── .env                 # Environment variables (NOT tracked by Git)
-├── .gitignore           # Ignore .env, __pycache__, etc.
-├── requirements.txt     # Lists all Python dependencies
-└── README.md            # Project overview and usage guide
+└──  .gitignore           # Ignore .env, __pycache__, etc.
+
+-requirements.txt     # Lists all Python dependencies
+-README.md            # Project overview and usage guide
 ```
 
 ## 🚀 How to Run
