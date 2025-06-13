@@ -1,0 +1,1 @@
+google-generativeai\nunstructured\npytesseract\npython-dotenv
