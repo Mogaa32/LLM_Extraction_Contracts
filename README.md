@@ -14,6 +14,7 @@ LLM_Extraction/
 ├── .env                 # Environment variables (NOT tracked by Git)
 └──  .gitignore           # Ignore .env, __pycache__, etc.
 
+-Flow_chart.text      # Has the working and flow of the code for each file
 -requirements.txt     # Lists all Python dependencies
 -README.md            # Project overview and usage guide
 ```
