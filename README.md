@@ -5,17 +5,16 @@ This project extracts structured data from carrier contract PDFs using OCR and t
 ## 🧱 Project Structure
 
 LLM_Extraction/
-│
-├── main.py # Main pipeline entry
-├── setup.py # Loads environment variables & config
-├── data_extraction.py # PDF partitioning and OCR using Unstructured
-├── gemini_api.py # Gemini API call and prompt formatting
-├── data_structure.py # Adds entries to the nested structure
-├── try_fix.py # Utility to fix malformed JSON from LLM
-├── .env # API keys and config (not tracked by Git)
-├── .gitignore # Ignore config and cache files
-├── requirements.txt # Python dependencies
-├── README.md # This file
+├── main.py              # Main pipeline entry point
+├── setup.py             # Loads environment variables & config (PDF path, API keys)
+├── data_extraction.py   # Extracts text and tables from PDF using Unstructured + OCR
+├── gemini_api.py        # Formats prompt and calls Gemini API
+├── data_structure.py    # Adds entries to the nested location structure
+├── try_fix.py           # Utility to clean and fix malformed JSON responses
+├── .env                 # Environment variables (NOT tracked by Git)
+├── .gitignore           # Ignore .env, __pycache__, etc.
+├── requirements.txt     # Lists all Python dependencies
+└── README.md            # Project overview and usage guide
 
 
 ## 🚀 How to Run
