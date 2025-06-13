@@ -1,0 +1,32 @@
+[ main.py ]
+   |
+   |---> [ setup.py ]
+   |        - Loads environment variables from .env
+   |        - Sets up API keys and OCR tool path
+   |        - Defines PDF_PATH for consistent access
+   |
+   |---> [ data_extraction.py ]
+   |        - Uses Unstructured and pytesseract to parse PDF
+   |        - Returns structured chunks (tables + other text)
+   |
+   |---> [ gemini_api.py ]
+   |        - Sends text chunks to Gemini API
+   |        - Handles JSON parsing and result cleanup
+   |
+   |---> [ data_structure.py ]
+   |        - Contains in-memory nested dict (location_data)
+   |        - Provides add_entry() to insert structured results
+   |
+   |---> [ try_fix_json.py ]
+   |        - Contains function to fix malformed JSON strings
+   |        - Used internally by gemini_api.py
+   |
+   |---> [.env]
+   |        - GEMINI_API_KEY="your-api-key-here"
+   |        - TESSERACT_PATH="full/path/to/tesseract.exe"
+   |        - PDF_PATH="D:/.../your_pdf.pdf"
+   |
+   |---> [.gitignore]
+            - .env
+            - __pycache__/
+            - *.pyc
